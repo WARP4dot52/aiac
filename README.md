@@ -1,4 +1,4 @@
-aiac ( /eɪk/ )
-is 
-a
-calculator
+aiac ( /eɪk/ )  
+is  
+a  
+calculator  
