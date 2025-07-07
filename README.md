@@ -14,4 +14,4 @@ but anyone with basic C knowlege (optional) and an half working brain (optional 
   
 if you want to add any cool feature just do a pull request.
 
-writen by WARP7 , june 2025
+written by WARP7 , june 2025
