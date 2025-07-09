@@ -12,14 +12,17 @@ void div_(float innum1, float innum2, float* ptrres);
 void mod(float innum1, float innum2, float* ptrres);
 
 int main(void) {
+	
+	float number1, number2, result;
+	char signe;
+
 	printf("aiac is a calculator\n");
 	printf("TYPE 0 0 h OR h FOR HELP\n");
+	
 	while (1) {
-		float number1, number2, result;
 		result = 0;
 		number1 = 0;
 		number2 = 0;
-		char signe;
 		printf("? ");
 		scanf_s("%f %f\n", &number1, &number2);
 		scanf_s(" %c", &signe, 1);
