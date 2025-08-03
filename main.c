@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#define PI 3.1415926535897932384626433832795028841971693993751058209749445923
 
 void mod(float innum1, float innum2, float* ptrres);
 void runaudio();
