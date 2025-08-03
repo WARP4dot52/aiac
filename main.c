@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <unistd.h>
-#define PI 3.1415926535897932384626433832795028841971693993751058209749445923
 
 void mod(float innum1, float innum2, float* ptrres);
 void runaudio();
@@ -54,8 +52,9 @@ void mod(float innum1, float innum2, float* ptrres) {
 void runaudio(){
 	char* BINARY = "aplay"; /* define the binary name of aplay (or any player) */
 	char filename[256];
-	printf("Type the name/path of the audio(WAVE) file:");
+	char command[sizeof(filename) + sizeof(BINARY) + 2];
+	printf("Type the name/path of the audio(WAVE) file: ");
 	scanf("%255s", filename);
-	char* args[3] = { BINARY, filename, NULL };
-	execvp(BINARY, args);
+	snprintf(command, sizeof(command), "%s %s", BINARY, filename); /*we better be safe (although scanf already checks the size of the imput to avoid any buffer overflow) */
+	system(command);
 }
