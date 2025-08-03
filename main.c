@@ -23,8 +23,8 @@ int main(void) {
 		number1 = 0;
 		number2 = 0;
 		printf("? ");
-		scanf_s("%f %f\n", &number1, &number2);
-		scanf_s(" %c", &signe, 1);
+		scanf("%f %f\n", &number1, &number2);
+		scanf(" %c", &signe, 1);
 
 		if (number1 == 0 | number2 == 0 && signe == '/') { printf("ILLEGAL OPERATION\n"); number1 = 0; number2 = 0; signe = '+'; }
 
