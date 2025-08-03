@@ -53,10 +53,9 @@ void mod(float innum1, float innum2, float* ptrres) {
 
 void runaudio(){
 	char* BINARY = "aplay"; /* define the binary name of aplay (or any player) */
-	char* filename = malloc(256);
+	char filename[256];
 	printf("Type the name/path of the audio(WAVE) file:");
 	scanf("%255s", filename);
 	char* args[3] = { BINARY, filename, NULL };
 	execvp(BINARY, args);
-	free(filename);
 }
